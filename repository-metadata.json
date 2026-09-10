@@ -1,5 +1,5 @@
 {
-  "description": "MCP server that spawns parallel Claude subagents with workspace file access, cursor-based result delivery, and effort adaptation",
+  "description": "Use Claude subagents in Codex via an MCP server with parallel delegation across up to four concurrent agents.",
   "topics": [
     "mcp",
     "mcp-server",

@@ -1,6 +1,6 @@
-# Claude Subagents MCP Server
+# Use Claude subagents in Codex
 
-Claude subagents MCP server for Codex and other stdio MCP clients. Spawn up to four independent Claude agents from your orchestrating session, let them work in parallel with optional file access, and collect results through a structured wait/cursor protocol. Built entirely on the Python standard library.
+A Python stdlib MCP server that delegates tasks to up to four parallel Claude subagents, with optional workspace file access and per-agent model and reasoning effort configuration. Other stdio MCP clients are also supported.
 
 ![A tasteful diagram of a central controller node linked to four modular agents, each representing an independent Claude subagent working in parallel](assets/claude-subagents-banner.png)
 

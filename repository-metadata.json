@@ -1,0 +1,26 @@
+{
+  "description": "MCP server that spawns parallel Claude subagents with workspace file access, cursor-based result delivery, and effort adaptation",
+  "topics": [
+    "mcp",
+    "mcp-server",
+    "claude",
+    "anthropic",
+    "subagents",
+    "agent-orchestration",
+    "codex",
+    "stdio",
+    "python",
+    "llm-tools",
+    "parallel-agents",
+    "model-context-protocol",
+    "claude-subagents",
+    "ai-agents",
+    "task-delegation",
+    "reasoning-effort",
+    "developer-tools"
+  ],
+  "release_title": "Claude Subagents MCP Server 0.1.0 -- Initial Public Release",
+  "release_notes": "Initial release of the Claude Subagents MCP server.\n\n### Highlights\n\n- Spawn up to four parallel Claude subagents from Codex or any stdio MCP client\n- Scoped workspace file access with read, batch read (16 files), and optional write tools\n- Cursor-based result delivery through `wait_claude_agents` for reliable once-only collection\n- Configurable model and reasoning effort per agent, with automatic adaptation for unsupported models\n- Follow-up messages to running or idle agents\n- Durable task state that persists across client restarts\n- Request ID deduplication for safe retries after transport failures\n- Zero external dependencies -- runs on Python 3.11+ standard library\n\nSee [CHANGELOG.md](CHANGELOG.md) for the full list of features.\n\nThis is an initial release, not a production guarantee. CI covers Windows, Linux, and macOS with Python 3.11 through 3.13.",
+  "illustration_alt": "A tasteful diagram of a central controller node linked to four modular agents, each representing an independent Claude subagent working in parallel",
+  "illustration_caption": "Claude Subagents MCP architecture overview. Illustration generated with ImageGen."
+}

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-subagents-mcp"
+version = "0.1.0"
+description = "MCP server that spawns parallel Claude subagents with workspace file access, cursor-based result delivery, and effort adaptation"
+requires-python = ">=3.11"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [{name = "jordankzf"}]
+dependencies = []
+keywords = ["claude", "mcp", "codex", "subagents", "anthropic", "agent-orchestration"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development",
+]
+
+[project.scripts]
+claude-subagents-mcp = "claude_subagents_mcp:main"
+
+[project.urls]
+Homepage = "https://github.com/jordankzf/claude-subagents-mcp"
+Repository = "https://github.com/jordankzf/claude-subagents-mcp"
+Issues = "https://github.com/jordankzf/claude-subagents-mcp/issues"
+
+[tool.setuptools]
+py-modules = ["claude_subagents_mcp"]
